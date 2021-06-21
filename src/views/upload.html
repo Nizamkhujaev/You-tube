@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner container1">
+            <a href="/" class="header-inner-left">
+                <img src="../images/icons/logo.svg" alt="" class="header-inner-left__img">
+            </a>
+
+            <div class="header-inner-center">
+                <form class="header-inner-center-form">
+                    <input type="search" placeholder="Search..." class="header-inner-center-form__input">
+                </form>
+            </div>
+
+            <div class="header-inner-right">
+                <a href="../pages/profile.html" class="header-inner-right-profile">
+                    <img src="../images/profile.png" id="img-holder" alt="" class="header-inner-right-profile__img">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="upload-video">
+        <form class="upload-video-form">
+            <input required type="file" accept="video/mp4,video/x-m4v,video/*" id="input-file" class="upload-video-form__file">
+            <label for="input-file" class="upload-video-form__label-file">
+                <img src="../images/icons/video.png" class="" alt="">
+            </label>
+            <input required placeholder="Video title" type="text" class="upload-video-form__input-text">
+            <button class="upload-video-form__btn">Upload</button>
+        </form>
+    </div>
+
+    <script src="/scripts/upload.js"></script>
+</body>
+</html>

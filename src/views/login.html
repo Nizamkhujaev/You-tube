@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    
+    <div class="auth">
+        <form class="auth-form">
+            <div class="row">
+                <div class="input-field col s12">
+                  <input id="text" type="text" required class="validate">
+                  <label class="validatee" for="text">Username</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                  <input id="password" id="password" required type="password" class="validate">
+                  <label class="validatee" for="password">Password</label>
+                </div>
+            </div>
+
+            <input name="file" type="file" required id="auth-input" accept="image/*" class="auth-form__input">
+            <label for="auth-input" class="auth-form__label">
+                <img src="/images/icons/img.png" alt="">
+                <h4>Upload profile photo</h4>
+            </label>
+
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+                Submit
+            </button>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="/scripts/login.js"></script>
+</body>
+</html>
